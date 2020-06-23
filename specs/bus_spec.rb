@@ -64,4 +64,12 @@ class BusTest < MiniTest::Test
         assert_equal(0, @bus_stop.queue.length())
     end
 
+    def test_bus_breakdown()
+        @bus.pick_up(@passenger_1)
+        @bus.pick_up(@passenger_2)
+        @bus.pick_up(@passenger_3)
+        @bus.breakdown()
+        assert_equal(0, @bus.passenger_count())
+    end
+    
 end

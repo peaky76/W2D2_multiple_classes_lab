@@ -34,5 +34,9 @@ class Bus
         end
         stop.empty_queue()
     end
+
+    def breakdown()
+        empty()
+    end
     
 end
