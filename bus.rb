@@ -6,5 +6,9 @@ class Bus
         @route = route
         @destination = destination
     end
+
+    def drive()
+        return "Vroom vroom!"
+    end
     
 end
