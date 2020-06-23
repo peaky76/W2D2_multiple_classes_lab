@@ -27,4 +27,9 @@ class BusTest < MiniTest::Test
         assert_equal("Vroom vroom!", @bus.drive())
     end
 
+    def test_pick_up()
+        @bus.pick_up(@passenger)
+        assert_equal(1, @bus.passenger_count())
+    end
+
 end
