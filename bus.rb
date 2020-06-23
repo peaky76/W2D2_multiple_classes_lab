@@ -5,10 +5,15 @@ class Bus
     def initialize(route, destination)
         @route = route
         @destination = destination
+        @passengers = []
     end
 
     def drive()
         return "Vroom vroom!"
+    end
+
+    def passenger_count()
+        return @passengers.count()
     end
     
 end
