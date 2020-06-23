@@ -19,5 +19,9 @@ class Bus
     def pick_up(passenger)
         @passengers << passenger
     end
+
+    def drop_off(passenger)
+        @passengers.delete(passenger)
+    end
     
 end
