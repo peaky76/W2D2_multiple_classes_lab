@@ -14,5 +14,9 @@ class BusStop
     def add_person(person)
         @queue << person
     end
+
+    def empty_queue()
+        @queue.clear()
+    end
     
 end
