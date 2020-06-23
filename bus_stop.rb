@@ -10,5 +10,9 @@ class BusStop
     def queue_length()
         return @queue.length()
     end
+
+    def add_person(person)
+        @queue << person
+    end
     
 end
