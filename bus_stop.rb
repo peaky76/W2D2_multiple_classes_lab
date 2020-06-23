@@ -1,6 +1,6 @@
 class BusStop
 
-    attr_reader :name
+    attr_reader :name, :queue
     
     def initialize(name)
         @name = name
